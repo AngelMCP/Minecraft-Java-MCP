@@ -1,0 +1,563 @@
+/*Fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('img/inicio.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover {
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: #ff5080;
+}
+#inicio .contenido header .contenido-header .seleccionado{
+    color: #ff5080;
+}
+
+#inicio .contenido .tlauncher{
+    max-width: 11100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .tlauncher .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .tlauncher h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .tlauncher h2 span{
+    font-size: 25px;
+    color: #ff5080;
+}
+
+#inicio .contenido .tlauncher .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .tlauncher a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform:uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .tlauncher a:hover{
+    background-color: #ff5080;
+}
+
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+
+/*SECCION TLAUNCHER*/
+
+#Tlauncher{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color:#111135;
+    display: flex;
+}
+
+#Tlauncher .contenedor-foto {
+    max-width: 400px;
+    margin-right: 60px;
+}
+
+#Tlauncher .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#Tlauncher .Tlauncher{
+    margin: 0 40px;
+}
+
+#Tlauncher .Tlauncher .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#Tlauncher .Tlauncher h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#Tlauncher .Tlauncher h2 span{
+    color: #ff5080;
+}
+
+#Tlauncher .Tlauncher h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#Tlauncher .Tlauncher p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#Tlauncher .Tlauncher a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#Tlauncher .Tlauncher a:hover{
+    background-color: #ff5080;
+    color: #fff;
+}
+
+/*SECCION CLIENTE*/
+
+#cliente{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color:#111135;
+    display: flex;
+}
+
+#cliente .contenedor--foto {
+    max-width: 400px;
+    margin-right: 60px;
+}
+
+#cliente .contenedor--foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#cliente .cliente{
+    margin: 0 40px;
+}
+
+#cliente .cliente .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#cliente .cliente h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#cliente .cliente h2 span{
+    color: #ff5080;
+}
+
+#cliente .cliente h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#cliente .cliente p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#cliente .cliente a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#cliente .cliente a:hover{
+    background-color: #ff5080;
+    color: #fff;
+}
+
+/* seccion texture*/
+#textures{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color:#111135;
+    display: flex;
+}
+
+#textures .contenedor--foto {
+    max-width: 400px;
+    margin-right: 60px;
+}
+
+#textures .contenedor--foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#textures .textures{
+    margin: 0 40px;
+}
+
+#textures .textures .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#textures .textures h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#textures .textures h2 span{
+    color: #ff5080;
+}
+
+#textures .textures h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#textures .textures p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#textures .textures a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#textures .textures a:hover{
+    background-color: #ff5080;
+    color: #fff;
+}
+
+/*SECCION CONFIGURACION*/
+#configuracion{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color:#111135;
+    display: flex;
+}
+
+#configuracion .contenedor--foto {
+    max-width: 400px;
+    margin-right: 60px;
+}
+
+#configuracion .contenedor--foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#configuracion .configuracion{
+    margin: 0 40px;
+}
+
+#configuracion .configuracion .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#configuracion .configuracion h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#configuracion .configuracion h2 span{
+    color: #ff5080;
+}
+
+#configuracion .configuracion h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#configuracion .configuracion p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#configuracion .configuracion a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#configuracion .configuracion a:hover{
+    background-color: #ff5080;
+    color: #fff;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav.responsive{
+        display: block;
+        background-color: rgba(0,0,0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+    #icono-nav{
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+    #Tlauncher{
+        padding: 50px 0;
+        display: block;
+    }
+    #Tlauncher .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #Tlauncher .contenedor-foto img{
+        padding: 8px;
+    }
+    #Tlauncher .Tlauncher .titulo-seccion{
+        text-align: center;
+    }
+    #Tlauncher .Tlauncher h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #cliente{
+        padding: 50px 0;
+        display: block;
+    }
+    #cliente .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #cliente .contenedor-foto img{
+        padding: 8px;
+    }
+    #cliente .cliente .titulo-seccion{
+        text-align: center;
+    }
+    #cliente .cliente h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #textures{
+        padding: 50px 0;
+        display: block;
+    }
+    #textures .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #textures .contenedor-foto img{
+        padding: 8px;
+    }
+    #textures .textures .titulo-seccion{
+        text-align: center;
+    }
+    #textures .textures h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #configuracion{
+        padding: 50px 0;
+        display: block;
+    }
+    #configuracion .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #configuracion .contenedor-foto img{
+        padding: 8px;
+    }
+    #configuracion .configuracion .titulo-seccion{
+        text-align: center;
+    }
+    #configuracion .configuracion h2{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Minecraft launcher</title>
+</head>
+
+<body>
+    <!--Seccion inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/MCP/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#Tlauncher" onclick="seleccionar(this)">Tlauncher</a></li>
+                            <li><a href="#cliente" onclick="seleccionar(this)">Cliente</a></li>
+                            <li><a href="#textures" onclick="seleccionar(this)">Textures</a></li>
+                            <li><a href="#configuracion" onclick="seleccionar(this)">Configuracion</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--ICONOS DE LAS REDES SOCIALES-->
+                    <div class="redes">
+                        <a href="https://youtube.com/channel/UC5xrwfp-mql65eusd0M35jw"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100039796805809"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@angel17_yt?_t=8Vp43IZkJxl&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="tlauncher">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Angel Balderramos</span>, Desarrollador web</h2>
+                <p class="descripcion">Hoy te vengo a traer Minecraft java, tambien un cliente para mejorar tus FPS, y
+                    un texture
+                    pack para que tu minecraft quede muy lindo y te vaya fluido, al final de la pagina web dejare una
+                    buena configuracion para tu minecraft.</p>
+                <a href="#Sigue">Sigue bajando</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion tlauncher-->
+    <section id="Tlauncher">
+        <div class="contenedor-foto">
+            <img src="img/tlauncher.jpg" alt="">
+        </div>
+        <div class="Tlauncher">
+            <p class="titulo-seccion">Tlauncher</p>
+            <h2>Hola, <span>has llegado a la seccion</span></h2>
+            <h3>Donde podras descargar minecraft</h3>
+            <p>Tlauncher es una app que trae todas las versiones de minecraft java, si solo quieres el minecraft y ya
+                solo dale aqui en descargar y no mires los demas pasos, pero si tambien buscas un texture pack y un
+                cliente para que el minecraft te vaya piola, puedes descargar minecraft y seguir bajando.</p>
+            <a href="https://tlauncher.org">Descargar</a>
+        </div>
+    </section>
+
+    <!-- cliente -->
+    <section id="cliente">
+        <div class="contenedor--foto">
+            <img src="img/cliente.jpg" alt="">
+        </div>
+        <div class="cliente">
+            <p class="titulo-seccion">Cliente</p>
+            <h2>Hola, <span>has llegado a la seccion</span></h2>
+            <h3>donde podras descargar el cliente de minecraft</h3>
+            <p>Has llegado a la seccion donde se descarga el cliente de minecraft, el cliente de minecraft te ayuda
+                a mejorar tus fps y hace que el minecraft vaya muy fluido en alguna pc de bajos recursos y tiene mas
+                cosas como ver cuantos clicks haces etc... si te interesa dale al boton de descargar, y si no te
+                interesa sigue bajando.</p>
+            <a href="https://cm-pack.pl">Descargar</a>
+        </div>
+    </section>
+
+    <!--texture -->
+    <section id="textures">
+        <div class="contenedor--foto">
+            <img src="img/texture.jpg" alt="">
+        </div>
+        <div class="textures">
+            <p class="titulo-seccion">Texture pack</p>
+            <h2>Hola, <span>has llegado a la seccion</span></h2>
+            <h3>Donde podras descargar minecraft</h3>
+            <p>Has llegado a la seccion donde se descarga el texture pack, un texture pack es un paquete de texturas que hacen
+                ver a tu minecraft muy bonito, si quieres el texture pack dale en el boton de descargar, al final de la
+                pagina web te dejo una buena configuracion.</p>
+            <a href="https://www.mediafire.com/file/svvlgtr8appom53/!+++++§1Deivid§fFault+§8(§1Blue§8)+§8(§f16x§8).zip/file">Descargar</a>
+        </div>
+    </section>
+
+    <!-- configuracion -->
+    <section id="configuracion">
+        <div class="contenedor--foto">
+            <img src="img/configuracion.jpg" alt="">
+        </div>
+        <div class="configuracion">
+            <p class="titulo-seccion">Configuracion</p>
+            <h2>Hola, <span>has llegado a la seccion</span></h2>
+            <h3>Donde podras configurar tu minecraft</h3>
+            <p>Attack/Destroy: button  1 <br> Drop Item: Q <br> Pick Block: button 3 <br>Use Item/Place block: button 2 <br> Hotbar Slot 1: 1 <br> Hotbar Slot 2: 2 <br>Hotbar Slot 3: 3 <br> Hotbar Slot 4: 4 <br> Hotbar Slot 5: 5 <br> Hotbar Slot 6: 6 <br> Hotbar Slot 7: R <br> Hotbar Slot 8: X <br> Hotbar Slot 9: C <br> Inventory: E <br> Highlight Players spectators: None <br> Take Screenshot: F2 <br> Toggle Cinematic Camera: None <br> Toggle Fullscreen: F11 <br> Toggle Perspective: F <br> Zoom: LMENU <br> Jump: Space <br> Sneak: LSHIT <br> Sprint: LCONTROL <BR> Strafe Left: A <br> Strafe Right: D <br> Walk Backwards: S <br> Walk Forwards <br> List Players: TAB <br> Open Chat: T <br> Open Command: SLASH <br> Pause/Unpause Stream: F7 <br> Push To Talk/Mute: None <br> Show Stream Commercials: None <br> Start/Stop Stream: F6 <br> Sensitivity: 35% <br> Invert Mouse: OFF <br> Touchscreen Mode: OFF</Main></Obj></p>
+            <a href="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png">Gracias por llegar hasta aqui</a>
+        </div>
+    </section>
+
+    <!-- DERECHOS -->
+    <footer>
+        <p>Todos los derechos reservados &copy;</p>
+        <div class="redes">
+            <a href="https://youtube.com/channel/UC5xrwfp-mql65eusd0M35jw"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100039796805809"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@angel17_yt?_t=8Vp43IZkJxl&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
